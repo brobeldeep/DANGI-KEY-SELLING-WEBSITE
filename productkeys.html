@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Product Grid</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white">
+    <div class="container mx-auto px-4 py-8">
+        <!-- Search Input -->
+        <div class="mb-4">
+            <input type="text" id="searchInput" placeholder="Search for products..." class="border p-2 w-full rounded-lg" onkeyup="filterProducts()">
+        </div>
+
+        <!-- Product Grid -->
+        <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <!-- Product 1 -->
+            <a href="buynow.html" class="block product text-center border rounded-lg p-2 shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                <div class="relative">
+                    <img alt="Win 10 Home" class="mx-auto" height="150" src="https://storage.googleapis.com/a1aa/image/sRsegYM9nehcpUzqCVKoXtFPAteoKAac1tcjnXETnrLD75GnA.jpg" width="100" />
+                    <span class="absolute top-2 left-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">Sold out</span>
+                </div>
+                <p class="mt-2 text-sm font-semibold product-name">MS Win 10 Home OEM KEY GLOBAL - Lifetime</p>
+                <p class="text-gray-700 text-sm">Rs. 1,554.00</p>
+            </a>
+
+            <!-- Product 2 -->
+            <a href="buynow.html" class="block product text-center border rounded-lg p-2 shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                <img alt="Win 11 Home" class="mx-auto" height="150" src="https://storage.googleapis.com/a1aa/image/pumZmcJiVi4aGB567xuw6Lm4ef3qGNrUd5ByxZRlQf8365GnA.jpg" width="100" />
+                <p class="mt-2 text-sm font-semibold product-name">MS Win 11 Home OEM KEY GLOBAL</p>
+                <p class="text-gray-700 text-sm">Rs. 1,554.00</p>
+            </a>
+            <!-- Product 1 -->
+            <a href="buynow.html" class="block product text-center border rounded-lg p-2 shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                <div class="relative">
+                    <img alt="Win 10 Home" class="mx-auto" height="150" src="https://storage.googleapis.com/a1aa/image/sRsegYM9nehcpUzqCVKoXtFPAteoKAac1tcjnXETnrLD75GnA.jpg" width="100" />
+                    <span class="absolute top-2 left-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">Sold out</span>
+                </div>
+                <p class="mt-2 text-sm font-semibold product-name">MS Win 10 Home OEM KEY GLOBAL - Lifetime</p>
+                <p class="text-gray-700 text-sm">Rs. 1,554.00</p>
+            </a>
+
+            <!-- Product 2 -->
+            <a href="buynow.html" class="block product text-center border rounded-lg p-2 shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                <img alt="Win 11 Home" class="mx-auto" height="150" src="https://storage.googleapis.com/a1aa/image/pumZmcJiVi4aGB567xuw6Lm4ef3qGNrUd5ByxZRlQf8365GnA.jpg" width="100" />
+                <p class="mt-2 text-sm font-semibold product-name">MS Win 11 Home OEM KEY GLOBAL</p>
+                <p class="text-gray-700 text-sm">Rs. 1,554.00</p>
+            </a>
+            <!-- Product 1 -->
+            <a href="buynow.html" class="block product text-center border rounded-lg p-2 shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                <div class="relative">
+                    <img alt="Win 10 Home" class="mx-auto" height="150" src="https://storage.googleapis.com/a1aa/image/sRsegYM9nehcpUzqCVKoXtFPAteoKAac1tcjnXETnrLD75GnA.jpg" width="100" />
+                    <span class="absolute top-2 left-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">Sold out</span>
+                </div>
+                <p class="mt-2 text-sm font-semibold product-name">MS Win 10 Home OEM KEY GLOBAL - Lifetime</p>
+                <p class="text-gray-700 text-sm">Rs. 1,554.00</p>
+            </a>
+
+            <!-- Product 2 -->
+            <a href="buynow.html" class="block product text-center border rounded-lg p-2 shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                <img alt="Win 11 Home" class="mx-auto" height="150" src="https://storage.googleapis.com/a1aa/image/pumZmcJiVi4aGB567xuw6Lm4ef3qGNrUd5ByxZRlQf8365GnA.jpg" width="100" />
+                <p class="mt-2 text-sm font-semibold product-name">MS Win 11 Home OEM KEY GLOBAL</p>
+                <p class="text-gray-700 text-sm">Rs. 1,554.00</p>
+            </a>
+            <!-- Product 1 -->
+            <a href="buynow.html" class="block product text-center border rounded-lg p-2 shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                <div class="relative">
+                    <img alt="Win 10 Home" class="mx-auto" height="150" src="https://storage.googleapis.com/a1aa/image/sRsegYM9nehcpUzqCVKoXtFPAteoKAac1tcjnXETnrLD75GnA.jpg" width="100" />
+                    <span class="absolute top-2 left-2 bg-blue-600 text-white text-xs px-2 py-1 rounded">Sold out</span>
+                </div>
+                <p class="mt-2 text-sm font-semibold product-name">MS Win 10 Home OEM KEY GLOBAL - Lifetime</p>
+                <p class="text-gray-700 text-sm">Rs. 1,554.00</p>
+            </a>
+
+            <!-- Product 2 -->
+            <a href="buynow.html" class="block product text-center border rounded-lg p-2 shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                <img alt="Win 11 Home" class="mx-auto" height="150" src="https://storage.googleapis.com/a1aa/image/pumZmcJiVi4aGB567xuw6Lm4ef3qGNrUd5ByxZRlQf8365GnA.jpg" width="100" />
+                <p class="mt-2 text-sm font-semibold product-name">MS Win 11 Home OEM KEY GLOBAL</p>
+                <p class="text-gray-700 text-sm">Rs. 1,554.00</p>
+            </a>
+
+
+        </div>
+    </div>
+
+    <!-- JavaScript to filter products -->
+    <script>
+        function filterProducts() {
+            const searchInput = document.getElementById('searchInput').value.toLowerCase();
+            const products = document.getElementsByClassName('product');
+            const productNames = document.getElementsByClassName('product-name');
+            
+            for (let i = 0; i < products.length; i++) {
+                const productName = productNames[i].textContent.toLowerCase();
+                if (productName.includes(searchInput)) {
+                    products[i].style.display = 'block'; // Show product if match found
+                } else {
+                    products[i].style.display = 'none'; // Hide product if no match
+                }
+            }
+        }
+    </script>
+</body>
+</html>
